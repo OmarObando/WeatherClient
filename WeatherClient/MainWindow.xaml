@@ -1,0 +1,23 @@
+﻿<Window x:Class="WeatherClient.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:uc="clr-namespace:WeatherClient.UserControls"
+        
+        mc:Ignorable="d"
+        Title="MainWindow" Height="546.739" Width="765.217">
+    <Grid>
+        <Image  Stretch="Fill" Source="C:\Users\oband\source\repos\WeatherClient\WeatherClient\Images\fotoIntro.png"></Image>
+        <TextBox  x:Name="tb_cityName" HorizontalAlignment="Left" Height="23" Margin="80,19,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.5,0.5"/>
+
+        <Label Content="Ciudad:" HorizontalAlignment="Left" Margin="21,17,0,0" VerticalAlignment="Top" Width="97"/>
+        <Button x:Name="button_queryForecast" Content="Pronostico" HorizontalAlignment="Left" Margin="297,20,0,0" VerticalAlignment="Top" Width="159" Click="button_queryForecast_Click"/>
+        <Button x:Name="button_queryWheater" Content="Actual" HorizontalAlignment="Left" Margin="471,20,0,0" VerticalAlignment="Top" Width="124" Click="button_queryWheater_Click"/>
+        <WrapPanel x:Name="wp_Wheater"  HorizontalAlignment="left" Height="250" Margin="20,175,0,10" VerticalAlignment="Top" Width="711">
+        </WrapPanel>
+       
+
+
+    </Grid>
+</Window>
